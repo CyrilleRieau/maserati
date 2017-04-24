@@ -1,0 +1,38 @@
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+.logo {
+    width: 120px;
+    height: 53px;
+}
+.actu {
+    display:block;
+    text-align: right;
+    flex: 1.2;
+}
+li {
+    flex: 1;
+    text-align: center;
+}
+.essai {
+    display:inline-block;
+    border: 1px solid #0a4c51;
+    background-color:#0a4c51;
+    border-radius:2px;
+    margin-left:10px;
+    height: 35px;
+    }
+.essaitext {
+    display:inline-block;
+    color:white;
+
+}
