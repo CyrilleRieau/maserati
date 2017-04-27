@@ -141,11 +141,12 @@ p   {
     color: rgb(48, 48, 48);
 }
 .maserati {
-    margin-top : 10px;
     font-size: 0.65em;
     color: rgb(98, 98, 98)
 }        
-.quattroporte {
+.quattroporte {    
+}
+.quattroportetext {
     background-image: url("/maserati/quatroporte.jpg");
     background-size : 300px 160px;
     background-repeat: no-repeat;
@@ -156,28 +157,37 @@ p   {
     margin-top : 5px;
 }
 .levante {
+}
+.levantetext {
     background-image: url("/maserati/levante.jpg");
     background-size : 300px 160px;
     background-repeat: no-repeat;
     background-position-x: right;
-    background-position-y: bottom;
+    background-position-y: bottom;    
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-left : 15px;
     font-size: 1.3em;
     margin-top: 5px;
 }
 .ghibli {
+    display:flex;
+    flex-direction: column;
+}
+.ghiblitext {
     background-image: url("/maserati/ghibli.jpg");
     background-size : 300px 160px;
     background-repeat: no-repeat;
     background-position-x: right;
-    background-position-y: bottom;
+    background-position-y: bottom;    
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-left : 15px;
     font-size: 1.3em;
     margin-top: 5px;
 }
 .gtsport {
+    
+}
+.gtsporttext {
     background-image: url("/maserati/gtsport.jpg");
     background-size : 300px 160px;
     background-repeat: no-repeat;
@@ -189,6 +199,9 @@ p   {
     margin-top: 5px;
 }
 .gcsport {
+
+}
+.gcsporttext {
     background-image: url("/maserati/gcsport.jpg");
     background-size : 300px 160px;
     background-repeat: no-repeat;
@@ -199,26 +212,57 @@ p   {
     font-size: 1.3em;
     margin-top: 5px;
 }
-.ghibli:hover {
+.ghiblitext:hover {
     background-image : none; 
 }
-.quattroporte:hover {
+.quattroportetext:hover {
     background-image : none; 
 }
-.levante:hover {
+.levantetext:hover {
     background-image : none; 
 }
-.gtsport:hover {
+.gtsporttext:hover {
     background-image : none; 
 }
-.gcsport:hover {
+.gcsporttext:hover {
     background-image : none;
 }
 .ghibli2 {
-    visibility:hidden;
-    width: 150px;
-    height: 120px;
+    width: 140px;
+    height: 100px;
     position:relative;
-    top: 0%;
-    left: 100%;
+    top: -20%;
+    left: 60%;
+    display:block;
+    display:none;
+}
+.ghiblihidtext {
+    display:block;
+    font-size : 0.6em;
+    color: rgb(48, 48, 48);
+    line-height: 18px;
+}
+.ghibliprix {
+    display : block;
+    color: rgb(80, 80, 80);
+    font-size : 0.8em;
+    position : relative;
+    bottom: -10%;
+    left:0%;
+}
+.plusghibli {
+    display: block;
+    position :relative;
+    right: -55%;
+    bottom: -5%;
+}
+.input {
+    color:rgb (48, 48, 48);
+    text-decoration: none;
+    border: 0.1em solid black;
+    padding:2px;
+    width: 150px;
+}
+.ajout {
+    display:none;
 }
