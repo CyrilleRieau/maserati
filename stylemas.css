@@ -145,6 +145,8 @@ p   {
     color: rgb(98, 98, 98)
 }        
 .quattroporte {    
+    display:flex;
+    flex-direction: column;
 }
 .quattroportetext {
     background-image: url("/maserati/quatroporte.jpg");
@@ -157,6 +159,8 @@ p   {
     margin-top : 5px;
 }
 .levante {
+    display:flex;
+    flex-direction: column;
 }
 .levantetext {
     background-image: url("/maserati/levante.jpg");
@@ -185,7 +189,8 @@ p   {
     margin-top: 5px;
 }
 .gtsport {
-    
+    display:flex;
+    flex-direction: column;
 }
 .gtsporttext {
     background-image: url("/maserati/gtsport.jpg");
@@ -199,7 +204,8 @@ p   {
     margin-top: 5px;
 }
 .gcsport {
-
+    display:flex;
+    flex-direction: column;
 }
 .gcsporttext {
     background-image: url("/maserati/gcsport.jpg");
@@ -212,13 +218,7 @@ p   {
     font-size: 1.3em;
     margin-top: 5px;
 }
-.ghiblitext:hover {
-    background-image : none; 
-}
 .quattroportetext:hover {
-    background-image : none; 
-}
-.levantetext:hover {
     background-image : none; 
 }
 .gtsporttext:hover {
@@ -233,14 +233,13 @@ p   {
     position:relative;
     top: -20%;
     left: 60%;
-    display:block;
-    display:none;
 }
 .ghiblihidtext {
     display:block;
     font-size : 0.6em;
     color: rgb(48, 48, 48);
     line-height: 18px;
+    margin-top:-25%;
 }
 .ghibliprix {
     display : block;
@@ -263,6 +262,131 @@ p   {
     padding:2px;
     width: 150px;
 }
+@keyframes arrive {
+    from {display :none;}
+    to {display: block;}
+}
+.ghiblitext:hover {
+    background-image : none;
+}
 .ajout {
-    display:none;
+    animation-name: arrive;
+    animation-delay: 0ms;
+    animation-duration: 10ms;
+} 
+
+.levantetext:hover {
+    background-image : none; 
+}
+.levante2 {
+    width: 140px;
+    height: 100px;
+    position:relative;
+    top: -20%;
+    left: 60%;
+}
+.levantedtext {
+    display:block;
+    font-size : 0.6em;
+    color: rgb(48, 48, 48);
+    line-height: 18px;
+    margin-top:-25%;
+}
+.levanteprix {
+    display : block;
+    color: rgb(80, 80, 80);
+    font-size : 0.8em;
+    position : relative;
+    bottom: -10%;
+    left:0%;
+}
+.pluslevante {
+    display: block;
+    position :relative;
+    right: -55%;
+    bottom: -5%;
+}
+.quattroporte2 {
+    width: 140px;
+    height: 100px;
+    position:relative;
+    top: -40%;
+    left: 60%;
+}
+.quattroportedtext {
+    display:block;
+    font-size : 0.6em;
+    color: rgb(48, 48, 48);
+    line-height: 18px;
+    margin-top:-25%;
+}
+.quattroporteprix {
+    display : block;
+    color: rgb(80, 80, 80);
+    font-size : 0.8em;
+    position : relative;
+    bottom: -10%;
+    left:0%;
+}
+.plusquattroporte {
+    display: block;
+    position :relative;
+    right: -55%;
+    bottom: 0%;
+}
+.gtsport2 {
+    width: 140px;
+    height: 100px;
+    position:relative;
+    top: -50%;
+    left: 60%;
+}
+.gtsportdtext {
+    display:block;
+    font-size : 0.6em;
+    color: rgb(48, 48, 48);
+    line-height: 18px;
+    margin-top:-25%;
+}
+.gtsportprix {
+    display : block;
+    color: rgb(80, 80, 80);
+    font-size : 0.8em;
+    position : relative;
+    bottom: -5%;
+    left:0%;
+}
+.plusgtsport {
+    display: block;
+    position :relative;
+    right: -55%;
+    bottom: 5%;
+}
+.gcsport2 {
+    width: 140px;
+    height: 100px;
+    position:relative;
+    top: -40%;
+    left: 60%;
+}
+.gcsportdtext {
+    display:block;
+    font-size : 0.6em;
+    color: rgb(48, 48, 48);
+    line-height: 18px;
+    margin-top:-25%;
+}
+.gcsportprix {
+    display : block;
+    color: rgb(80, 80, 80);
+    font-size : 0.8em;
+    position : relative;
+    bottom: -5%;
+    left:0%;
+}
+.plusgcsport {
+    display: block;
+    position :relative;
+    right: -55%;
+    bottom: 10%;
 }
